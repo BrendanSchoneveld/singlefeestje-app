@@ -1,0 +1,118 @@
+/******************************
+Colors
+******************************/
+
+// brand colors
+$brand-color--white: #ffffff;
+$brand-color--black: #000000;
+$brand-color--yellow: #ffe000;
+$brand-color--purple: #3b0256;
+$brand-color--red: #ee2963;
+
+// custom colors
+$brand-color--lightgrey: #f7f7f7;
+$brand-color--mediumgrey: #c3c3c3;
+$brand-color--darkgrey: #999999;
+
+// utility colors
+$error-color: #d33737;
+
+/******************************
+Fonts
+******************************/
+
+// base fontsize
+$fontsize--browser-base: 10px;
+
+//
+$fontsize--body: 1.6rem;
+$fontsize--small: 1.4rem;
+$fontsize--h1: 7rem;
+$fontsize--h2: 4.5rem;
+$fontsize--h3: 3.2rem;
+$fontsize--h4: 2.4rem;
+$fontsize--h5: 2rem;
+$fontsize--h6: 1.6rem;
+
+$font-weight--bold: bold;
+
+/******************************
+Breakpoints
+******************************/
+
+// Breakpoints
+$breakpoint--phone: 400px;
+$breakpoint--phone-wide: 480px;
+$breakpoint--phablet: 560px;
+$breakpoint--tablet-small: 640px;
+$breakpoint--tablet: 768px;
+$breakpoint--tablet-wide: 1024px;
+$breakpoint--desktop: 1248px;
+$breakpoint--desktop-wide: 1440px;
+
+$spacings: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+//$fontsizes: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$fontsizes: (
+  $fontsize--h1,
+  $fontsize--h2,
+  $fontsize--h3,
+  $fontsize--h4,
+  $fontsize--h5,
+  $fontsize--h6,
+  $fontsize--small
+);
+$sides: (top, bottom, left, right, center);
+
+:root {
+  // Colors
+  --brand-color--white: #{$brand-color--white};
+  --brand-color--black: #{$brand-color--black};
+  --brand-color--yellow: #{$brand-color--yellow};
+  --brand-color--lightgrey: #{$brand-color--lightgrey};
+  --brand-color--mediumgrey: #{$brand-color--mediumgrey};
+  --brand-color--darkgrey: #{$brand-color--darkgrey};
+  --error-color: #{$error-color};
+
+  // Fonts
+  --fontsize--browser-base: #{$fontsize--browser-base};
+
+  --font-weight--bold: #{$font-weight--bold};
+  --fontsize--body: #{$fontsize--body};
+  --fontsize--small: #{$fontsize--small};
+
+  --fontsize--h1: #{$fontsize--h1};
+  --fontsize--h2: #{$fontsize--h2};
+  --fontsize--h3: #{$fontsize--h3};
+  --fontsize--h4: #{$fontsize--h4};
+  --fontsize--h5: #{$fontsize--h5};
+  --fontsize--h6: #{$fontsize--h6};
+
+  // Breakpoints
+  --breakpoint--phone: #{$breakpoint--phone};
+  --breakpoint--phone-wide: #{$breakpoint--phone-wide};
+  --breakpoint--phablet: #{$breakpoint--phablet};
+  --breakpoint--tablet-small: #{$breakpoint--tablet-small};
+  --breakpoint--tablet: #{$breakpoint--tablet};
+  --breakpoint--tablet-wide: #{$breakpoint--tablet-wide};
+  --breakpoint--desktop: #{$breakpoint--desktop};
+  --breakpoint--desktop-wide: #{$breakpoint--desktop-wide};
+}
+
+$breakpoints: (
+  "phone": --breakpoint--phone,
+  "phone-wide": --breakpoint--phone-wide,
+  "phablet": --breakpoint--phablet,
+  "tablet-small": --breakpoint--tablet-small,
+  "tablet": --breakpoint--tablet,
+  "tablet-wide": --breakpoint--tablet-wide,
+  "desktop": --breakpoint--desktop,
+  "desktop-wide": --breakpoint--desktop-wide
+);
+
+$z-indexes: (
+  "outdated-browser",
+  "modal",
+  "site-header",
+  "page-wrapper",
+  "site-footer"
+);

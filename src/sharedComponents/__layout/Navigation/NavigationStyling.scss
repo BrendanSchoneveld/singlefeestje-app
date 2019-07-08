@@ -1,0 +1,15 @@
+@import "../../../sharedStyling/abstracts/_abstracts-dir";
+
+.app-navigation {
+  &__item {
+  }
+
+  &__link {
+    color: v(brand-color--purple);
+
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@import "../abstracts/variables", "../abstracts/functions";
+
+body {
+  font-size: v(font-size--browser-base);
+  background: v(brand-color--orange);
+}

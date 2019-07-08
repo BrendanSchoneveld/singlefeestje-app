@@ -1,0 +1,39 @@
+@import "../abstracts/variables";
+
+ul,
+p {
+  font-size: var(--fontsize--body);
+}
+
+h1 {
+  font-size: var(--fontsize--h1);
+}
+
+h2 {
+  font-size: var(--fontsize--h2);
+}
+
+h3 {
+  font-size: var(--fontsize--h3);
+}
+
+h4 {
+  font-size: var(--fontsize--h4);
+}
+
+h5 {
+  font-size: var(--fontsize--h5);
+}
+
+h6 {
+  font-size: var(--fontsize--h6);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}

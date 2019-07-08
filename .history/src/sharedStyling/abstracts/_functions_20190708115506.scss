@@ -1,0 +1,4 @@
+// shortcut for using :root variables while writing css
+@function v($var) {
+  @return var(--#{$var});
+}

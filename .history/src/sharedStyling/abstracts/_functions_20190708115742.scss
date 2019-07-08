@@ -1,0 +1,29 @@
+// shortcut for using :root variables while writing css
+@function v($var) {
+  @return var(--#{$var});
+}
+/* 
+:root {
+  --primary: #000;
+  --bg: #fff;
+}
+
+html {
+    background: v(bg);
+    color: v(primary);
+}
+*/
+
+@function z($name) {
+  @if index($z-indexes, $name) {
+    @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+  } @else {
+    @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+    @return null;
+  }
+}
+/* 
+  .site-header {
+      z-index: z('site-header');
+  } 
+*/

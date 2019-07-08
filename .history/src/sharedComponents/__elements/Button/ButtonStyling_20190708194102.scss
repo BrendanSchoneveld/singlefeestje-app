@@ -1,0 +1,18 @@
+@import "../../../sharedStyling/abstracts/_abstracts-dir";
+
+.btn {
+  padding: 2rem;
+  border-radius: 5rem;
+  font-size: v(font-size--body);
+
+  &-default {
+    background: v(brand-color--purple);
+    color: v(brand-color--yellow);
+    transition: background-color 0.4s, color 0.4s, background 0.4s;
+
+    &:hover {
+      background: v(brand-color--pink);
+      transition: background-color 0.4s, color 0.4s, background 0.4s;
+    }
+  }
+}

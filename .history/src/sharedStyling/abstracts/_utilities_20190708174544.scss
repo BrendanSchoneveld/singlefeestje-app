@@ -1,0 +1,80 @@
+@import "./variables.scss";
+
+.flex {
+  display: flex;
+
+  &--center-v {
+    align-items: center;
+  }
+
+  &--center-h {
+    justify-content: center;
+  }
+
+  &--align-t {
+    align-items: flex-start;
+  }
+
+  &--align-b {
+    align-items: flex-end;
+  }
+
+  &--divide-h {
+    justify-content: space-between;
+  }
+}
+
+.txt {
+  &--l {
+    text-align: left;
+  }
+
+  &--c {
+    text-align: center;
+  }
+
+  &--r {
+    text-align: right;
+  }
+
+  &--color-black {
+    color: var(--brand-color-black);
+  }
+
+  &--color-yellow {
+    color: var(--brand-color-yellow);
+  }
+
+  &--color-white {
+    color: var(--brand-color-white);
+  }
+}
+
+@each $spaceUnit in $spacings {
+  @each $side in $sides {
+    @if $side == "all" {
+      .m-#{$spaceUnit} {
+        margin: #{$spaceUnit}rem;
+      }
+
+      .p-#{$spaceUnit} {
+        padding: #{$spaceUnit}rem;
+      }
+    } @else {
+      // maak class .m met
+      .m#{str-slice($side, 0, 1)}-#{$spaceUnit} {
+        margin-#{$side}: #{$spaceUnit}rem !important;
+      }
+
+      .p#{str-slice($side, 0, 1)}-#{$spaceUnit} {
+        padding-#{$side}: #{$spaceUnit}rem !important;
+      }
+    }
+  }
+}
+
+@each $spaceUnit in $fontsizes {
+  .font-size-#{$spaceUnit} {
+    margin: #{$spaceUnit}rem;
+  }
+}
